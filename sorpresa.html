@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorpresa para Jaqueline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6e6;
+      color: #b30000;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    .regalo {
+      position: relative;
+      display: inline-block;
+      padding: 20px;
+      border: 5px dashed #b30000;
+      border-radius: 20px;
+      background: #fff;
+      margin-top: 30px;
+    }
+    .regalo::before {
+      content: "🎁";
+      font-size: 50px;
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 25px);
+    }
+    .sorpresa {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    .osito {
+      width: 200px;
+      animation: bailar 2s infinite;
+    }
+    @keyframes bailar {
+      0% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-10px) rotate(5deg); }
+      50% { transform: translateY(0) rotate(0deg); }
+      75% { transform: translateY(-10px) rotate(-5deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+    .ofreces {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Sorpresa, Jaqueline!</h1>
+  <div class="regalo">
+    <p class="sorpresa">Dentro de este regalo encontrarás mi amor eterno y mil sonrisas.</p>
+    <img class="osito" src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" alt="Osito bailando">
+    <p class="ofreces">"Eres mi tesoro, mi sol y cada día a tu lado es un regalo."</p>
+  </div>
+</body>
+</html>
